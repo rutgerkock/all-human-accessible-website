@@ -234,15 +234,9 @@ main {
 
 }
 
-#info_button:hover {
-    height: 22rem;
-    background-image: url(../assets/arrow_up.svg);
 
-}
-
-#info_button:hover ul {
+#info_list.visible {
     display: block;
-
 }
 
 #info_button ul {

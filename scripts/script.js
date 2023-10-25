@@ -25,14 +25,18 @@ dropdown.addEventListener('click', function(event) {
 document.addEventListener("DOMContentLoaded", function () {
     const infoButton = document.getElementById("info_button");
     const infoList = document.getElementById("info_list");
+    let isInfoOpen = false;
 
     infoButton.addEventListener("click", function () {
-        infoButton.classList.toggle("active");
-
-        if (infoButton.classList.contains("active")) {
-            infoList.style.display = "block";
-        } else {
+        if (isInfoOpen) {
+            infoButton.style.height = "5rem"; 
             infoList.style.display = "none";
+            infoButton.style.backgroundImage = "url(../assets/arrow_down.svg)"; 
+        } else {
+            infoButton.style.height = "22rem";
+            infoList.style.display = "block"; 
+            infoButton.style.backgroundImage = "url(../assets/arrow_up.svg)";
         }
+        isInfoOpen = !isInfoOpen; 
     });
 });
