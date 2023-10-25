@@ -27,10 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const infoList = document.getElementById("info_list");
 
     infoButton.addEventListener("click", function () {
-        // Toggle the 'active' class on the infoButton
         infoButton.classList.toggle("active");
 
-        // Toggle the 'display' property of the infoList
         if (infoButton.classList.contains("active")) {
             infoList.style.display = "block";
         } else {
