@@ -20,3 +20,18 @@ dropdown.addEventListener('click', function(event) {
         menuButton.classList.remove('menuButton_active');
     }
 });
+
+
+var infoButton = document.getElementById('info_button');
+    var marginLeft = 72; 
+    infoButton.addEventListener('click', function() {
+        if (marginLeft === 1 ) {
+            infoButton.style.marginLeft = '72vw';
+            infoButton.style.backgroundImage = 'url(../assets/arrow_left.svg)';
+            marginLeft = 72;
+        } else {
+            infoButton.style.marginLeft = '1rem';
+            infoButton.style.backgroundImage = 'url(../assets/arrow_right.svg)';
+            marginLeft = 1;
+        }
+});

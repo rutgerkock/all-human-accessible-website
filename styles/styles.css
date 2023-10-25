@@ -224,7 +224,7 @@ main {
     height: 5rem;
     background-color: #7FAEC5;
     border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-right-radius: 0px;
     border: none;
     position: absolute;
     bottom: 0;
