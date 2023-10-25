@@ -22,16 +22,19 @@ dropdown.addEventListener('click', function(event) {
 });
 
 
-var infoButton = document.getElementById('info_button');
-    var marginLeft = 72; 
-    infoButton.addEventListener('click', function() {
-        if (marginLeft === 1 ) {
-            infoButton.style.marginLeft = '72vw';
-            infoButton.style.backgroundImage = 'url(../assets/arrow_left.svg)';
-            marginLeft = 72;
+document.addEventListener("DOMContentLoaded", function () {
+    const infoButton = document.getElementById("info_button");
+    const infoList = document.getElementById("info_list");
+
+    infoButton.addEventListener("click", function () {
+        // Toggle the 'active' class on the infoButton
+        infoButton.classList.toggle("active");
+
+        // Toggle the 'display' property of the infoList
+        if (infoButton.classList.contains("active")) {
+            infoList.style.display = "block";
         } else {
-            infoButton.style.marginLeft = '1rem';
-            infoButton.style.backgroundImage = 'url(../assets/arrow_right.svg)';
-            marginLeft = 1;
+            infoList.style.display = "none";
         }
+    });
 });
