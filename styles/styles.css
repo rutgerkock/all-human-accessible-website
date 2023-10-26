@@ -172,7 +172,7 @@ main {
 #waarom_section {
     height: 100vh;
     padding: 4rem 10% 0 10%;
-    background-color: #7FAEC5;
+    background-color: #FAFAFA;
     margin-top: -2rem;
     margin-bottom: -2rem;
 }
@@ -181,7 +181,7 @@ main {
     font-family: var(--title-font);
     font-size: 2.5rem;
     font-weight: var(--title-font-weight);
-    color: white;
+    color: var(--title-color);
 }
 
 #contact_section {
