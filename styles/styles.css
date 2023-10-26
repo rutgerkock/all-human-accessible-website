@@ -133,11 +133,12 @@ main {
 }
 
 #main_section {
-    height: 100vh;
+    height: 105vh;
     background-image: url(../assets/main.svg);
     background-position: center bottom;
     background-size: 100vw auto;
     background-repeat: no-repeat;
+    
 }
 
 #main_section h1 {
