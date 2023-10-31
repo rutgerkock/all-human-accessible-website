@@ -56,14 +56,12 @@ header button {
     width: 100%;
     background-color: #333;
     color: #E2F1FF;
-    text-align: center;
-    max-height: 0;
+    text-align: left;
+    height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: height 0.3s ease;
     z-index: 11;
 }
-
-
 
 #dropdownMenu ul {
     list-style: none;
@@ -75,13 +73,26 @@ header button {
 }
 
 #dropdownMenu a {
-    display: block;
-    font-family: var(--second-font);
+    font-family: var(--title-font);
     font-size: 2rem;
-    font-weight: var(--second-font-weight);
+    font-weight: var(--title-font-weight);
     color: #E2F1FF;
     text-decoration: none;
     padding: 10px;
+    display: flex;
+    align-items: center; 
+}
+
+#dropdownMenu a::before {
+    content: "";
+    display: inline-block;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+    background-color: currentColor;
+    aspect-ratio: 1/.86;
+    transition: 0.3s ease;
+    height: 0.8rem;
+    top: 0;
+    margin-right: 1rem;
 }
 
 #menuIcon {
@@ -91,6 +102,16 @@ header button {
 #menuButton.expanded #menuIcon {
     content: url('../assets/close.svg'); 
     rotate: 180deg;
+}
+
+#linkedin {
+    content: url('../assets/linkedin.svg');
+    width: 4rem;
+    height: 4rem;
+    margin: 0.6rem 0.6rem 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 h1 {

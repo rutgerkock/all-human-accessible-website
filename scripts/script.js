@@ -14,12 +14,12 @@ menuLinks.forEach(function (link) {
 });
 
 function toggleMenu() {
-    if (dropdownMenu.style.maxHeight === '0px' || dropdownMenu.style.maxHeight === '') {
-        dropdownMenu.style.maxHeight = '30rem';
+    if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
+        dropdownMenu.style.height = '60vh';
         menuButton.classList.add('expanded');
         header.classList.add('header-expanded');
     } else {
-        dropdownMenu.style.maxHeight = '0';
+        dropdownMenu.style.height = '0';
         menuButton.classList.remove('expanded');
         header.classList.remove('header-expanded');
     }
