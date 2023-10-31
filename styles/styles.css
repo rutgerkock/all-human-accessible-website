@@ -223,17 +223,17 @@ textarea {
 }
 
 #contact_section form input[type=submit] {
-    border: 2px solid #E2F1FF;
-    border-radius: 0.2rem;
-    box-shadow: -2px 2px 0px 2px #E2F1FF;
-    transition: 0.2s; 
+    background-color: #E2F1FF;
+    color: #4F686F;
+    border-radius: 0.5rem;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    height: 2.5rem;
+    background-image: url('../assets/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 7rem center;
+    background-size: 3rem 2rem;
 }
-
-#contact_section form input[type=submit]:active {
-    transform: translateY(2px) translateX(-2px);
-    box-shadow: 0px 0px 0px 0px #E2F1FF; 
-}
-
 
 footer {
     font-family: var(--title-font);
