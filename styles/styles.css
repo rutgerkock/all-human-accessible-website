@@ -83,6 +83,10 @@ header button {
     align-items: center; 
 }
 
+#spatwater {
+     margin-top: 4rem;
+}
+
 #dropdownMenu a::before {
     content: "";
     display: inline-block;
@@ -102,16 +106,6 @@ header button {
 #menuButton.expanded #menuIcon {
     content: url('../assets/close.svg'); 
     rotate: 180deg;
-}
-
-#linkedin {
-    content: url('../assets/linkedin.svg');
-    width: 4rem;
-    height: 4rem;
-    margin: 0.6rem 0.6rem 0 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 h1 {
@@ -146,13 +140,24 @@ h1 {
     height: 100vh;
 }
 
-#main_section a{
-    font-family: var(--title-font);
-    font-size: var(--title-font-size);
-    font-weight: var(--title-font-weight);
-    color: #E2F1FF;
-    text-decoration: none;
-    position: fixed;
+#main_section_img {
+    width: 21.5rem;
+    min-height: 24rem;
+    margin-top: 2rem;;
+    background-color: #D9D9D9;
+}
+
+#down_button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#down_button img {
+    transform: scale(0.65);
 }
 
 #app_section {
@@ -164,7 +169,7 @@ h1 {
 }
 
 #app_titel {
-    padding: 30% 18% 0% 10%;
+    padding: 30% 18% 0% 8%;
     min-width: 72%;
 }
 
@@ -173,7 +178,7 @@ h1 {
 }
 
 .titel {
-    padding: 30% 18% 0% 10%;
+    padding: 30% 18% 0% 8%;
     min-width: 72%;
 }
 
@@ -182,7 +187,7 @@ h1 {
     font-size: var(--second-font-size);
     font-weight: var(--second-font-weight);
     color: #E2F1FF;
-    width: 105%;
+    width: 107%;
 }
 
 #articles {
@@ -209,14 +214,14 @@ h1 {
 }
 
 #meedoen_titel {
-    padding: 30% 18% 0% 10%;
+    padding: 30% 18% 0% 8%;
     min-width: 72%;
 }
 
 #contact_section form {
     display: flex;
     flex-direction: column;
-    margin: 15% 5% 0% 10%;
+    margin: 15% 8% 0% 8%;
 }
 
 #contact_section form label, #contact_section form input[type=submit] {
