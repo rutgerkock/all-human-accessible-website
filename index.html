@@ -8,14 +8,28 @@
     <title>b-Rain</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <button id="menuButton">
-            <img src="assets/menu.svg" alt="menu">
+            <img src="assets/menu.svg" alt="menu" id="menuIcon">
         </button>
+        <div id="dropdownMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Waarom?</a></li>
+                <li><a href="#">Waarom bRAIN?</a></li>
+                <li><a href="#">Brain-app</a></li>
+                <li><a href="#">Lezen</a></li>
+                <li><a href="#contact_section">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section id="main_section">
-            <!-- <a href="#main_section"><h1>bRAIN</h1></a> -->
+            <div class="titel">
+                <h1>bRAIN</h1>
+                <p>Welkom bij b-RAIN, de toekomst van ons water.</p>
+                <button class="meer_lezen">Meer Lezen</button>
+            </div>
         </section>
         <section id="app_section">
             <div id="app_titel">
@@ -65,5 +79,12 @@
                 <input type="submit" value="Verstuur">
             </form>
         </section>
+        <footer>
+            <ul>
+                <li>copyright</li>
+                <li>contact</li>
+                <li>socials</li>
+            </ul>
+        </footer>
     </main>
 </body> 

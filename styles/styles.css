@@ -27,10 +27,17 @@ html {
 
 header {
     display: flex;
-    position: static;
+    position: fixed;
     justify-content: flex-end;
     align-items: center; 
     width: 100%;
+    background-color: var(--background-color);
+    height: 5%;
+    z-index: 999;
+}
+
+.header-expanded {
+    background-color: #333;
 }
 
 header button {
@@ -39,6 +46,51 @@ header button {
     cursor: pointer;
     margin: 0.6rem 0.6rem 0 0;
     scale: 0.8;
+    z-index: 12;
+}
+
+#dropdownMenu {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #E2F1FF;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 11;
+}
+
+
+
+#dropdownMenu ul {
+    list-style: none;
+    padding: 5px;
+}
+
+#dropdownMenu ul li:hover {
+    background-color: #4F686F;
+}
+
+#dropdownMenu a {
+    display: block;
+    font-family: var(--second-font);
+    font-size: 2rem;
+    font-weight: var(--second-font-weight);
+    color: #E2F1FF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#menuIcon {
+    transition: rotate 0.3s ease;
+}
+
+#menuButton.expanded #menuIcon {
+    content: url('../assets/close.svg'); 
+    rotate: 180deg;
 }
 
 h1 {
@@ -124,7 +176,7 @@ h1 {
 
 .article {
     margin: 5% 5% 0% 0%;
-    background-image: linear-gradient( black, transparent);
+    background-color: #D9D9D9;
     min-width: 75%;
     flex: 0 0 75%;
     scroll-snap-align: start;
@@ -182,3 +234,11 @@ textarea {
     box-shadow: 0px 0px 0px 0px #E2F1FF; 
 }
 
+
+footer {
+    font-family: var(--title-font);
+    font-size: var(--third-font-size);
+    font-weight: var(--title-font-weight);
+    color: #E2F1FF;
+    height: 15%;
+}
