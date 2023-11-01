@@ -133,7 +133,7 @@ header button {
     bottom: 0rem;
     right: 0rem;
     transform: scale(0.65);
-    z-index: ;
+    z-index: 998;
     rotate: 180deg;
     transition: 0.3s ease;
 }
